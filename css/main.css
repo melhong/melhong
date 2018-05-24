@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'qomolangma-uchen_sarchungRg';
-    src: url('/assets/fonts/qomolangma-uchensarchung-webfont.html') format('woff2'),
-         url('/assets/fonts/qomolangma-uchensarchung-webfont.woff') format('woff'),
-     url('assets/fonts/qomolangma-uchensarchung-webfont.ttf') format('truetype');
+    src: url('/melhong/assets/fonts/qomolangma-uchensarchung-webfont.html') format('woff2'),
+         url('/melhong/assets/fonts/qomolangma-uchensarchung-webfont.woff') format('woff'),
+     url('/melhongassets/fonts/qomolangma-uchensarchung-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6,
                 {background-repeat:no-repeat;
                     background-size:contain;
                     background-position:center center;
-                    background-image:url('/assets/themePic/Logo-Banner-1000X125-left-with-BG.png');
+                    background-image:url('/melhong/assets/themePic/Logo-Banner-1000X125-left-with-BG.png');
                 }
     .vlog-site-header,.vlog-site-header .entry-title a,
     .vlog-site-header a,.dl-menuwrapper li a,
