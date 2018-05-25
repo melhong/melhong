@@ -1,0 +1,174 @@
+<header id="header" class="vlog-site-header vlog-header-shadow hidden-xs hidden-sm">
+<div class="vlog-header-2">
+	<div class="vlog-header-wrapper">
+		<div class="container vlog-header-middle">
+			<div class="vlog-slot-c">	
+			<div class="vlog-site-branding ">
+				<h1 class="site-title h1"><a href="index.html" rel="home"></a></h1>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="vlog-header-bottom">
+		<div class="container">
+			<div class="vlog-slot-c">
+				<nav class="vlog-main-navigation">	
+					<ul id="menu-primary-menu" class="vlog-main-nav vlog-menu">
+					<!-- TEST NAV---------------- -->
+							{% for item in site.data.menu %}
+ 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13 {% if page.url == item.url  %} current_page_item {% endif %}"><a href="{{site.baseurl}}/{{ item.url }}" alt="{{ item.title }}">{{ item.name }}</a></li>
+  							 {% endfor %}
+					<!-- TEST NAV ENDS *********************** -->
+					</ul>
+				<!-- <ul id="menu-primary-menu" class="vlog-main-nav vlog-menu">
+					<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15">
+						<a href="index.html">མདུན་ངོས།</a>
+					<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13">
+						<a href="about/index.html">མདུན་ངོས།མདུན་ངོས།</a>
+					<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71">
+						<a href="content/index.html">དཀར་ཆག</a>
+					<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+						<a href="contact/index.html">འབྲེལ་གཏུགས།</a>
+				</ul> -->	
+				</nav>	
+ <!-- Action menu for search and watch later				
+			<div class="vlog-actions-menu">
+				<ul class="vlog-menu">
+					<li class="vlog-actions-button vlog-action-search">
+					<span>
+						<i class="fv fv-search"></i>
+					</span>
+					<ul class="sub-menu">
+						<form class="vlog-search-form" action="#" method="get">
+							<input name="s" type="text" value="" placeholder="འཚོལ་ཞིབ་བྱེད།" />
+							<button type="submit" class="vlog-button-search"><i class="fv fv-search"></i></button>
+						</form>	
+					</ul>
+					</li>	
+					<li class="vlog-actions-button vlog-watch-later">
+						<span>
+							<i class="fv fv-watch-later"></i>
+								<span class="vlog-watch-later-count pulse" style="display:none;">0</span>
+						</span>
+						<ul class="sub-menu">
+							<li class="vlog-menu-posts"></li>
+							<li class="vlog-wl-empty" style="">
+								<p class="text-center"><i class="fv fv-watch-later"></i> ད་ལྟ་བརྙན་འཕྲིན་མེན་འདུག།</p>
+								<p class="text-center vlog-small-border">རྗེས་ལ་ལྟོས།</p>
+							</li>
+						</ul>
+					</li>	
+				</ul>
+			</div>
+		-->	
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+<!-- nav for destop ends -->	
+<!-- nav for destop Sticky Starts -->	
+<div id="vlog-sticky-header" class="vlog-sticky-header vlog-site-header vlog-header-shadow vlog-header-bottom hidden-xs hidden-sm">
+		<div class="container">
+			<div class="vlog-slot-l">						
+				<div class="vlog-site-branding ">
+					<span class="site-title h1"><a href="index.html" rel="home"></a></span>
+				</div>
+			</div>
+				<div class="vlog-slot-c">
+					<nav class="vlog-main-navigation">	
+				<ul id="menu-primary-menu-1" class="vlog-main-nav vlog-menu">
+				{% for item in site.data.menu %}
+ 						<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15 {% if item.url == page.url %} current_page_item {% endif %}">
+                              <a href="{{site.baseurl}}/{{ item.url }}" alt="{{ item.title }}">{{ item.name }}</a></li>
+  							 {% endfor %}
+					</ul>
+					</nav>     
+				</div> 	
+		<!--- Action menu for search and watch later mobile 1 
+			<div class="vlog-slot-r">
+				<div class="vlog-actions-menu">
+					<ul class="vlog-menu">
+					<li class="vlog-actions-button vlog-action-search">
+								<span>
+									<i class="fv fv-search"></i>
+								</span>
+						<ul class="sub-menu">
+							<form class="vlog-search-form" action="http://melhong.com/" method="get"><input name="s" type="text" value="" placeholder="འཚོལ་ཞིབ་བྱེད།" /><button type="submit" class="vlog-button-search"><i class="fv fv-search"></i></button>
+							</form>
+						</ul>
+					</li>
+					<li class="vlog-actions-button vlog-watch-later">
+							<span>
+								<i class="fv fv-watch-later"></i>
+									<span class="vlog-watch-later-count pulse" style="display:none;">0</span>
+							</span>
+						<ul class="sub-menu">
+							<li class="vlog-menu-posts"></li>
+							<li class="vlog-wl-empty" style="">
+								<p class="text-center"><i class="fv fv-watch-later"></i> ད་ལྟ་བརྙན་འཕྲིན་མེན་འདུག།</p>
+								<p class="text-center vlog-small-border">རྗེས་ལ་ལྟོས།</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</div>
+		
+		
+		-->
+		</div>
+</div>	
+<!-- nav for destop Sticky Ends -->	
+<!-- Header nav for Mobile Device start -->
+<div id="vlog-responsive-header" class="vlog-responsive-header hidden-lg hidden-md">
+	<div class="container">	
+		<div class="vlog-site-branding ">
+			<span class="site-title h1"><a href="index.html" rel="home"></a></span>
+		</div>
+				<!--- action menu for search and watch later mobile 2 -
+				<ul>
+					<li class="vlog-actions-button vlog-action-search">
+						<span>
+							<i class="fv fv-search"></i>
+						</span>
+						<ul class="sub-menu">
+							<form class="vlog-search-form" action="http://melhong.com/" method="get">
+								<input name="s" type="text" value="" placeholder="འཚོལ་ཞིབ་བྱེད།" />
+								<button type="submit" class="vlog-button-search"><i class="fv fv-search"></i></button>
+							</form>	
+						</ul>
+					</li>	
+					<li class="vlog-actions-button vlog-watch-later">
+						<span>
+							<i class="fv fv-watch-later"></i>
+							<span class="vlog-watch-later-count pulse" style="display:none;">0</span>
+						</span>
+						<ul class="sub-menu">
+							<li class="vlog-menu-posts">
+											</li>
+							<li class="vlog-wl-empty" style="">
+								<p class="text-center"><i class="fv fv-watch-later"></i> ད་ལྟ་བརྙན་འཕྲིན་མེན་འདུག།</p>
+								<p class="text-center vlog-small-border">རྗེས་ལ་ལྟོས།</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+				-->
+	</div>
+	<div id="dl-menu" class="dl-menuwrapper">
+				<button class="dl-trigger"><i class="fa fa-bars"></i></button>	
+				<ul id="menu-primary-menu-2" class="vlog-mob-nav dl-menu">
+				{% for item in site.data.menu %}
+ 						<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-15 {% if item.url == page.url %} current_page_item {% endif %}">
+                              <a href="{{site.baseurl}}/{{ item.url }}" alt="{{ item.title }}">{{ item.name }}</a>
+                              </li>
+  							 {% endfor %}
+					</ul>				
+	</div>
+
+</div>
+
+<!-- Header nav for Mobile Device Ends-->
