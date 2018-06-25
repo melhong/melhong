@@ -253,7 +253,9 @@ img.emoji {
 
 
 .vlog-comment{border:0px}
-
+.vlog-header-wrapper{
+	background-image: url(/assets/themePic/Logo-Banner-1000X125-left-with-BG.png);
+}
 
 
 
